@@ -20,8 +20,8 @@ struct TipPicker: View {
 }
 
 struct TipPicker_Previews: PreviewProvider {
-    @State static var pct: Double = 0.20
+    @State static var previewTipPercentage: Double = 0.20
     static var previews: some View {
-        TipPicker(tipPercentage: $pct)
+        TipPicker(tipPercentage: $previewTipPercentage)
     }
 }

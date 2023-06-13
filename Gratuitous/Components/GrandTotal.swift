@@ -13,13 +13,14 @@ struct GrandTotal: View {
         Text(tippedAmountStr)
             .font(.largeTitle)
             .foregroundColor(Constants.acc)
-            .frame(height: UIScreen.main.bounds.size.height * 0.3)
+            .frame(height: UIScreen.main.bounds.size.height * 0.15)
+            
     }
 }
 
 struct GrandTotal_Previews: PreviewProvider {
-    @State static var tippedAmt: String = "$174.32"
+    @State static var previewTippedAmountStr: String = "$174.32"
     static var previews: some View {
-        GrandTotal(tippedAmountStr: $tippedAmt)
+        GrandTotal(tippedAmountStr: $previewTippedAmountStr)
     }
 }

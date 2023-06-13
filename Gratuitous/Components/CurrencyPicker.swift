@@ -14,6 +14,7 @@ struct CurrencyPicker: View {
         VStack {
             Text("Currency:")
                 .foregroundColor(Constants.acc)
+            Divider()
             Picker("$", selection: $currency) {
                 ForEach(currencies, id: \.self) { curr in
                     Text(curr).foregroundColor(Constants.acc).tag(curr)
@@ -25,8 +26,8 @@ struct CurrencyPicker: View {
 }
 
 struct CurrencyPicker_Previews: PreviewProvider {
-    @State static var currency: String = "$"
+    @State static var previewCurrency: String = "$"
     static var previews: some View {
-        CurrencyPicker(currency: $currency)
+        CurrencyPicker(currency: $previewCurrency)
     }
 }

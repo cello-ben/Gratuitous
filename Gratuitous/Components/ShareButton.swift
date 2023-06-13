@@ -10,6 +10,7 @@ import SwiftUI
 struct ShareButton: View {
     @Binding var tip: String
     var body: some View {
+        
         Button() {
             if !tip.isEmpty {
                 let activityViewController = UIActivityViewController(
@@ -32,8 +33,8 @@ struct ShareButton: View {
 }
 
 struct ShareButton_Previews: PreviewProvider {
-    @State static var tmp: String = "$127.30"
+    @State static var previewTip: String = "$127.30"
     static var previews: some View {
-        ShareButton(tip: $tmp)
+        ShareButton(tip: $previewTip)
     }
 }

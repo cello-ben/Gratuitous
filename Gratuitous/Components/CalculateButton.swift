@@ -37,8 +37,8 @@ struct CalculateButton: View {
 }
 
 struct CalculateButton_Previews: PreviewProvider {
-    @State static var tippedAmt: String = "132.47"
+    @State static var previewTippedAmt: String = "132.47"
     static var previews: some View {
-        CalculateButton(currency: "$", totalAmountStr: "110.39", tipPercentage: 0.20, tippedAmountStr: $tippedAmt)
+        CalculateButton(currency: "$", totalAmountStr: "110.39", tipPercentage: 0.20, tippedAmountStr: $previewTippedAmt)
     }
 }

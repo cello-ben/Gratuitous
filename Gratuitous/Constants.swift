@@ -10,4 +10,5 @@ import SwiftUI
 
 class Constants {
     static let acc = Color("AccentColor")
+    static let messages: [String] = ["Be nice to your server!", "Hope you had a good meal!", "Be a good tipper!"]
 }

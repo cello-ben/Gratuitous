@@ -9,8 +9,11 @@ import SwiftUI
 
 struct Header: View {
     var body: some View {
-        Text("Be nice to your server!").font(.largeTitle)
-            .foregroundColor(Constants.acc)
+        VStack {
+            Text(Constants.messages.randomElement() ?? "").font(.callout)
+                .foregroundColor(Constants.acc)
+            Divider()
+        }
     }
 }
 
