@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
+    //To differentiate between light mode and dark mode.
     @Environment(\.colorScheme) var colorScheme
     
+    //Main state storage for app. Everything else handled in components.
     @State var tipPercentage: Double = 0.20
     @State var totalAmountStr: String = ""
     @State var tippedAmountStr: String = ""
@@ -53,6 +55,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
