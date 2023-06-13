@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A01493D42A38B49F0004026A /* InputSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01493D32A38B49F0004026A /* InputSanitizer.swift */; };
+		A01493D72A38E3340004026A /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01493D62A38E3340004026A /* Header.swift */; };
+		A01493D92A38E40B0004026A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01493D82A38E40B0004026A /* Constants.swift */; };
+		A01493DB2A38E4670004026A /* CalculateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01493DA2A38E4670004026A /* CalculateButton.swift */; };
+		A01493DD2A38E5F40004026A /* TipPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01493DC2A38E5F40004026A /* TipPicker.swift */; };
+		A01493DF2A38E7760004026A /* BillTotalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01493DE2A38E7760004026A /* BillTotalField.swift */; };
+		A01493E22A38E7BA0004026A /* GrandTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01493E12A38E7BA0004026A /* GrandTotal.swift */; };
+		A01493E52A38E9240004026A /* CurrencyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01493E42A38E9240004026A /* CurrencyPicker.swift */; };
+		A01493F12A38FE610004026A /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01493F02A38FE610004026A /* ShareButton.swift */; };
 		A0607CFD2A37A79E001F354E /* GratuitousApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0607CFC2A37A79E001F354E /* GratuitousApp.swift */; };
 		A0607CFF2A37A79E001F354E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0607CFE2A37A79E001F354E /* ContentView.swift */; };
 		A0607D012A37A7A1001F354E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0607D002A37A7A1001F354E /* Assets.xcassets */; };
@@ -14,6 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A01493D32A38B49F0004026A /* InputSanitizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSanitizer.swift; sourceTree = "<group>"; };
+		A01493D62A38E3340004026A /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		A01493D82A38E40B0004026A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A01493DA2A38E4670004026A /* CalculateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateButton.swift; sourceTree = "<group>"; };
+		A01493DC2A38E5F40004026A /* TipPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipPicker.swift; sourceTree = "<group>"; };
+		A01493DE2A38E7760004026A /* BillTotalField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTotalField.swift; sourceTree = "<group>"; };
+		A01493E12A38E7BA0004026A /* GrandTotal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandTotal.swift; sourceTree = "<group>"; };
+		A01493E42A38E9240004026A /* CurrencyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPicker.swift; sourceTree = "<group>"; };
+		A01493E72A38FC630004026A /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = System/Library/Frameworks/CarPlay.framework; sourceTree = SDKROOT; };
+		A01493F02A38FE610004026A /* ShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
 		A0607CF92A37A79E001F354E /* Gratuitous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gratuitous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0607CFC2A37A79E001F354E /* GratuitousApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratuitousApp.swift; sourceTree = "<group>"; };
 		A0607CFE2A37A79E001F354E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,11 +51,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A01493D52A38E3290004026A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A01493D62A38E3340004026A /* Header.swift */,
+				A01493DA2A38E4670004026A /* CalculateButton.swift */,
+				A01493DC2A38E5F40004026A /* TipPicker.swift */,
+				A01493DE2A38E7760004026A /* BillTotalField.swift */,
+				A01493E12A38E7BA0004026A /* GrandTotal.swift */,
+				A01493E42A38E9240004026A /* CurrencyPicker.swift */,
+				A01493F02A38FE610004026A /* ShareButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A01493E62A38FC620004026A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A01493E72A38FC630004026A /* CarPlay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0607CF02A37A79E001F354E = {
 			isa = PBXGroup;
 			children = (
 				A0607CFB2A37A79E001F354E /* Gratuitous */,
 				A0607CFA2A37A79E001F354E /* Products */,
+				A01493E62A38FC620004026A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +93,13 @@
 		A0607CFB2A37A79E001F354E /* Gratuitous */ = {
 			isa = PBXGroup;
 			children = (
+				A01493D52A38E3290004026A /* Components */,
 				A0607CFC2A37A79E001F354E /* GratuitousApp.swift */,
 				A0607CFE2A37A79E001F354E /* ContentView.swift */,
 				A0607D002A37A7A1001F354E /* Assets.xcassets */,
 				A0607D022A37A7A1001F354E /* Preview Content */,
+				A01493D32A38B49F0004026A /* InputSanitizer.swift */,
+				A01493D82A38E40B0004026A /* Constants.swift */,
 			);
 			path = Gratuitous;
 			sourceTree = "<group>";
@@ -137,8 +182,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01493D92A38E40B0004026A /* Constants.swift in Sources */,
+				A01493DD2A38E5F40004026A /* TipPicker.swift in Sources */,
+				A01493DF2A38E7760004026A /* BillTotalField.swift in Sources */,
+				A01493F12A38FE610004026A /* ShareButton.swift in Sources */,
+				A01493D72A38E3340004026A /* Header.swift in Sources */,
+				A01493E52A38E9240004026A /* CurrencyPicker.swift in Sources */,
+				A01493E22A38E7BA0004026A /* GrandTotal.swift in Sources */,
 				A0607CFF2A37A79E001F354E /* ContentView.swift in Sources */,
 				A0607CFD2A37A79E001F354E /* GratuitousApp.swift in Sources */,
+				A01493DB2A38E4670004026A /* CalculateButton.swift in Sources */,
+				A01493D42A38B49F0004026A /* InputSanitizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
